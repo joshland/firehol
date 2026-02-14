@@ -39,3 +39,4 @@ unittest/coverage
 *.bz2
 firehol-*.*.*/
 README
+__pycache__

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "external_directory": "deny",
+    "edit": "allow",
+    "bash": {
+      "cd ..": "deny",
+      "*": "allow"
+    }
+  },
+  "mode": {
+    "reorg": {
+      "prompt": "Persona: Act as a Senior Organizational Design Consultant and Business Architect.\nContext: You are analyzing personnel and structural data from .csv files and strategic goals from .md files to model a company reorganization.\nConstraints:\nData Integrity: Do not invent employees or departments not found in the CSV data.\nOutput Format: Deliver all models as Markdown tables or Mermaid.js diagrams for easy visualization.\nTone: Professional, analytical, and objective.",
+      "tools": {
+        "read": true,
+        "glob": true,
+        "write": true,
+        "edit": true,
+        "bash": false,
+        "grep": true
+      }
+    }
+  },
+}
